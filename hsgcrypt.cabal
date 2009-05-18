@@ -1,0 +1,14 @@
+Name:            hsgcrypt
+Version:         0.1
+License:         BSD3
+Author:          Taru Karttunen
+Homepage:        http://github.com/taruti/hsgcrypt
+Category:        Cryptography
+Build-Depends:   base, bytestring
+Extra-Libraries: gcrypt
+Includes:        gcrypt.h
+Synopsis:        A low-level binding to the LGPL libgcrypt crypto library
+Exposed-modules: Codec.LibGCrypt.Low
+C-Sources:       cbits/wrap.c
+Extensions:      ForeignFunctionInterface
+Build-Type:      Simple
